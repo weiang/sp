@@ -3,7 +3,7 @@ from aip import AipSpeech
 
 APP_ID = '16698730'
 API_KEY = 'MVrXS46cNNB6nIiS0E8oCPGS'
-SECRTE_KEY = 'qIVBl4oViagQGlTt26zLC8ZLbPjo46tz'
+SECRET_KEY = 'qIVBl4oViagQGlTt26zLC8ZLbPjo46tz'
 client = AipSpeech(APP_ID, API_KEY, SECRET_KEY)
 
 def get_file_content(filePath):
@@ -22,7 +22,7 @@ def main():
 
 if __name__ == '__main__':
     if len(sys.argv) != 2:
-        print "Usage: %s <pcm_file>" % (sys.argv[0])
+        print("Usage: %s <pcm_file>" % (sys.argv[0]))
         sys.exit(1)
 
     main()
